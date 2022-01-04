@@ -15,5 +15,8 @@ Sunset: 17:14:00
 
 ```sol 90016 set``` - retrieve 24hr encoded 00:00:00 sunset timestring
 
+# dependencies
+wget date
+
 # install
 clone the repository and run make install. sol will be located in /usr/local/bin.
