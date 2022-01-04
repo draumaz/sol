@@ -17,6 +17,3 @@ Sunset: 17:14:00
 
 # dependencies
 wget date
-
-# install
-clone the repository and run make install. sol will be located in /usr/local/bin.
