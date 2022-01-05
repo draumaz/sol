@@ -16,4 +16,11 @@ Sunset: 17:14:00
 ```sol 90016 set``` - retrieve 24hr encoded 00:00:00 sunset timestring
 
 # dependencies
-wget date
+curl
+
+# install
+```
+git clone https://github.com/draumaz/sol; cd sol
+make
+make install clean
+```
