@@ -21,6 +21,5 @@ curl
 # install
 ```
 git clone https://github.com/draumaz/sol; cd sol
-make
-make install clean
+make; make install clean
 ```
