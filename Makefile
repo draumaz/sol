@@ -1,4 +1,4 @@
-main: sol
+make: sol
 	cp -v ./sol.sh ./sol
 	chmod -v a+x ./sol
 
