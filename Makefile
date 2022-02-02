@@ -1,9 +1,9 @@
 main: sol
-	cp ./sol.sh ./sol
-	chmod a+x ./sol
-
-clean: sol
-	rm ./sol
+	cp -v ./sol.sh ./sol
+	chmod -v a+x ./sol
 
 install: sol
-	cp ./sol /usr/local/bin/sol
+	cp -v ./sol /usr/local/bin/sol
+
+clean: sol
+	rm -v ./sol
