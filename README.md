@@ -21,5 +21,5 @@ curl
 # install
 ```
 git clone https://github.com/draumaz/sol; cd sol
-make; make install clean
+chmod +x sol; mv sol /somewhere/in/your/path/
 ```
