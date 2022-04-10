@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # draumaz/sol, 2022
 # MIT
 
