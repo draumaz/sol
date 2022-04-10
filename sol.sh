@@ -1,6 +1,6 @@
 #!/bin/bash
 # draumaz/sol, 2022
-# GPL v3
+# MIT
 
 if [ -z "$1" ]; then echo -n "Weather code: "; read i; else i=$1; fi
 x="$2"
