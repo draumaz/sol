@@ -2,6 +2,11 @@
 # draumaz/sol, 2022
 # MIT
 
+case `uname -s` in
+  *Darwin*) DATE_TOOL="gdate" ;;
+  *) DATE_TOOL="date" ;;
+esac
+
 case "$1" in
   "") echo -n "Weather code: " && read i ;;
   *) i="$1" ;;
@@ -12,8 +17,8 @@ curl --silent https://weather.com/weather/today/l/$i | \
   grep -oE "((1[0-2]|0?[1-9]):([0-5][0-9]) ?([AaPp][Mm]))" \
 > /tmp/$i.out
 
-t_rise=`date --date="$(head -1 /tmp/$i.out)" +%R`:00
-t_set=`date --date="$(tail -1 /tmp/$i.out)" +%R`:00
+t_rise=`${DATE_TOOL} --date="$(head -1 /tmp/$i.out)" +%R`:00
+t_set=`${DATE_TOOL} --date="$(tail -1 /tmp/$i.out)" +%R`:00
 
 rm /tmp/$i.out
 
