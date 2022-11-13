@@ -4,7 +4,7 @@
 
 case "$1" in
   "") echo -n "Weather code: " && read i ;;
-  *) i="$1"
+  *) i="$1" ;;
 esac
 
 curl --silent https://weather.com/weather/today/l/$i | \
@@ -13,7 +13,7 @@ curl --silent https://weather.com/weather/today/l/$i | \
 > /tmp/$i.out
 
 t_rise=`date --date="$(head -1 /tmp/$i.out)" +%R`:00
-t_set=`date --date="$(tail -1 /tmp/$i.out)" +%R)`:00
+t_set=`date --date="$(tail -1 /tmp/$i.out)" +%R`:00
 
 rm /tmp/$i.out
 
